@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>28 · Recap</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+  .recap { display: flex; flex-direction: column; gap: 0; margin-top: 28px; }
+  .recap-row {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 22px 0;
+    border-top: 2px solid var(--text);
+  }
+  .recap-row:last-of-type { border-bottom: 2px solid var(--text); }
+  .recap-num {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 900;
+    font-size: 52px;
+    color: var(--accent);
+    letter-spacing: -0.04em;
+    min-width: 90px;
+    line-height: 0.95;
+  }
+  .recap-title {
+    flex: 1;
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+    letter-spacing: -0.025em;
+  }
+  .recap-tag {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--text);
+    opacity: 0.7;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <p class="eyebrow">RECAP</p>
+  <h1 class="display m">오늘 배운 건<br><span class="accent">딱 3가지</span>입니다.</h1>
+  <div class="recap">
+    <div class="recap-row">
+      <span class="recap-num">01</span>
+      <p class="recap-title">AI한테 나를 기억시켜라</p>
+      <span class="recap-tag">커스텀 인스트럭션</span>
+    </div>
+    <div class="recap-row">
+      <span class="recap-num">02</span>
+      <p class="recap-title">잘 된 거 뜯어서 내 걸로</p>
+      <span class="recap-tag">역설계 3단계</span>
+    </div>
+    <div class="recap-row">
+      <span class="recap-num">03</span>
+      <p class="recap-title">나만의 봇을 만들어라</p>
+      <span class="recap-tag">GPTs / Projects / Gems</span>
+    </div>
+  </div>
+  <div class="footnote"><span class="rt">CHAEWON · INSIGHTLOG</span><span>28 / 33</span></div>
+</div>
+</body>
+</html>

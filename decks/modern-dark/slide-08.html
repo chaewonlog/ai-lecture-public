@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>08 · Test AI</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+  .steps { display: flex; gap: 12px; margin-top: 32px; }
+  .step {
+    flex: 1;
+    padding: 20px 18px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    position: relative;
+  }
+  .step-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  .step-text { font-size: 14px; color: var(--text); line-height: 1.5; font-weight: 500; }
+  .step-arrow { position: absolute; right: -18px; top: 50%; transform: translateY(-50%); color: var(--accent); font-size: 20px; z-index: 2; }
+  .pull { margin-top: 32px; font-size: 18px; color: var(--text); font-weight: 600; padding-left: 20px; border-left: 3px solid var(--accent); }
+</style>
+</head>
+<body>
+<div class="slide">
+  <p class="eyebrow">HOW TO CHOOSE</p>
+  <h1 class="title md">고르는 가장 좋은 방법은<br><span class="accent">직접 테스트</span>입니다.</h1>
+  <div class="steps">
+    <div class="step"><p class="step-num">STEP 1</p><p class="step-text">평소 자주 하는 업무를<br>하나 떠올려보세요</p><span class="step-arrow">→</span></div>
+    <div class="step"><p class="step-num">STEP 2</p><p class="step-text">거기서 자주 던지는<br>질문 하나 고르세요</p><span class="step-arrow">→</span></div>
+    <div class="step"><p class="step-num">STEP 3</p><p class="step-text">세 AI에 똑같이<br>던져봅니다</p><span class="step-arrow">→</span></div>
+    <div class="step"><p class="step-num">STEP 4</p><p class="step-text">결과 제일 마음에 드는<br>AI로 쓰세요</p></div>
+  </div>
+  <p class="pull">남들이 좋다는 거보다, 내 업무에 잘 맞는 게 정답입니다.</p>
+  <div class="meta"><span>CHAEWON · INSIGHTLOG</span><span>08 / 33</span></div>
+</div>
+</body>
+</html>

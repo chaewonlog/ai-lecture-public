@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>04 · Hook</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+  .hook-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 28px;
+  }
+  .hook-card {
+    padding: 26px 26px;
+    background: var(--surface);
+    border-radius: 12px;
+    position: relative;
+  }
+  .hook-card.hero {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+  }
+
+  .hook-card-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .hook-card.hero .hook-card-label { color: var(--accent); }
+  .hook-card-label .badge {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 3px 8px;
+    background: var(--bg);
+    color: var(--text);
+    border-radius: 3px;
+  }
+  .hook-card.hero .hook-card-label .badge {
+    background: var(--accent);
+    color: var(--bg);
+  }
+
+  .hook-stat-row {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .hook-stat-before {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    color: var(--muted);
+    letter-spacing: -0.028em;
+    line-height: 1;
+    text-decoration: line-through;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 3px;
+  }
+  .hook-stat-arrow {
+    font-family: 'Pretendard', sans-serif;
+    color: var(--accent);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .hook-stat-after {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 800;
+    font-size: 56px;
+    color: var(--accent);
+    letter-spacing: -0.035em;
+    line-height: 1;
+  }
+  .hook-card:not(.hero) .hook-stat-after {
+    color: var(--text);
+  }
+
+  .hook-note {
+    font-family: 'Space Mono', monospace;
+    font-size: 10.5px;
+    color: var(--muted);
+    letter-spacing: 0.3px;
+  }
+  .hook-card.hero .hook-note { color: var(--accent); font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <p class="eyebrow">HOOK</p>
+  <h1 class="title l">같은 도구,<br><span class="accent">다른 결과.</span></h1>
+
+  <div class="hook-layout">
+    <div class="hook-card hero">
+      <p class="hook-card-label"><span class="badge">CASE 01</span>회계감사 자료</p>
+      <div class="hook-stat-row">
+        <span class="hook-stat-before">5일</span>
+        <span class="hook-stat-arrow">→</span>
+        <span class="hook-stat-after">1시간</span>
+      </div>
+    </div>
+    <div class="hook-card">
+      <p class="hook-card-label"><span class="badge">CASE 02</span>블로그 초안</p>
+      <div class="hook-stat-row">
+        <span class="hook-stat-before">3시간</span>
+        <span class="hook-stat-arrow">→</span>
+        <span class="hook-stat-after">30분</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footnote"><span class="rt">CHAEWON · INSIGHTLOG</span><span>04 / 43</span></div>
+</div>
+</body>
+</html>

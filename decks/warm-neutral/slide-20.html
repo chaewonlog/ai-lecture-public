@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>17 · Part 02 Divider</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+  .part-num {
+    position: absolute;
+    right: 44px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 800;
+    font-size: 280px;
+    line-height: 0.9;
+    color: var(--border);
+    letter-spacing: -0.05em;
+    pointer-events: none;
+  }
+  .part-stamp {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    display: inline-block;
+    padding: 5px 12px;
+    border: 1.5px solid var(--accent);
+    border-radius: 4px;
+  }
+  .part-title {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+    position: relative;
+    z-index: 1;
+  }
+  .part-subtitle {
+    margin-top: 22px;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--muted);
+    letter-spacing: -0.2px;
+    line-height: 1.55;
+    max-width: 520px;
+    position: relative;
+    z-index: 1;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <span class="part-num">02</span>
+  <span class="part-stamp">PART 02</span>
+  <h1 class="part-title">잘 된 거 뜯어<br><span class="accent">내 걸로.</span></h1>
+  <p class="part-subtitle">프롬프트 잘 짜려고 고민하지 마세요.<br>구조는 훔치고 내용만 바꾸면 됩니다.</p>
+  <div class="footnote"><span class="rt">CHAEWON · INSIGHTLOG</span><span>20 / 43</span></div>
+</div>
+</body>
+</html>

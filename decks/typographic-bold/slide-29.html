@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>29 · Homework</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+  .hw-box {
+    margin-top: 26px;
+    padding: 32px 28px;
+    border: 2.5px solid var(--accent);
+    position: relative;
+  }
+  .hw-tag {
+    position: absolute;
+    top: -12px; left: 28px;
+    background: var(--bg);
+    padding: 0 10px;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .hw-title {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: -0.025em;
+    line-height: 1.3;
+  }
+  .hw-title .hi { color: var(--accent); }
+  .hw-steps { margin-top: 20px; display: flex; gap: 12px; }
+  .hw-step {
+    flex: 1;
+    padding: 14px 16px;
+    background: var(--surface);
+  }
+  .hw-step-num {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .hw-step-text {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.4;
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <p class="eyebrow">HOMEWORK</p>
+  <h1 class="display m">집에 가서<br><span class="accent">딱 하나만</span> 해보세요.</h1>
+  <div class="hw-box">
+    <span class="hw-tag">TODAY'S TASK</span>
+    <p class="hw-title">자주 쓰는 프롬프트 <span class="hi">하나</span>만<br>골라서, 봇으로 만들어보세요.</p>
+    <div class="hw-steps">
+      <div class="hw-step"><p class="hw-step-num">STEP 01</p><p class="hw-step-text">자주 치는<br>프롬프트 하나 고르기</p></div>
+      <div class="hw-step"><p class="hw-step-num">STEP 02</p><p class="hw-step-text">GPTs / Projects /<br>Gems에 심기</p></div>
+      <div class="hw-step"><p class="hw-step-num">STEP 03</p><p class="hw-step-text">내일부터<br>클릭 한 번으로 쓰기</p></div>
+    </div>
+  </div>
+  <div class="footnote"><span class="rt">CHAEWON · INSIGHTLOG</span><span>29 / 33</span></div>
+</div>
+</body>
+</html>

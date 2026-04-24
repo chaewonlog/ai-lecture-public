@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>18 · Don't Try</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+  .strike { position: relative; color: var(--muted); font-weight: 400; }
+  .strike::after { content: ''; position: absolute; left: 0; right: 0; top: 50%; height: 4px; background: #E04040; transform: rotate(-3deg); }
+  .stack { margin-top: 40px; display: flex; flex-direction: column; gap: 16px; }
+  .stack-row {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text);
+    padding: 16px 22px;
+    background: var(--card);
+    border-radius: 10px;
+    border-left: 4px solid var(--accent);
+  }
+  .stack-row strong { color: var(--accent); font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <p class="eyebrow">STOP</p>
+  <h1 class="title md"><span class="strike">프롬프트 잘 짜려</span><br>하지 마세요.</h1>
+  <div class="stack">
+    <p class="stack-row">고민할수록 <strong>막힙니다</strong></p>
+    <p class="stack-row">잘 된 결과물이 <strong>이미 넘쳐납니다</strong></p>
+    <p class="stack-row"><strong>거기서 가져오면 됩니다</strong></p>
+  </div>
+  <div class="meta"><span>CHAEWON · INSIGHTLOG</span><span>18 / 33</span></div>
+</div>
+</body>
+</html>

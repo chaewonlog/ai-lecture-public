@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>07 · Choose AI</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+  .ai-row { display: flex; gap: 14px; margin-top: 24px; }
+  .ai-card {
+    flex: 1;
+    padding: 20px 18px;
+    background: var(--surface);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .ai-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-bottom: 10px;
+  }
+  .ai-name {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: -0.02em;
+    color: var(--text);
+  }
+  .ai-desc { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+  .tip {
+    margin-top: 22px;
+    padding: 14px 18px;
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+  }
+  .tip-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px; font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .tip-text { font-size: 14px; color: var(--text); font-weight: 500; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <p class="eyebrow">PRELUDE</p>
+  <h1 class="title m">그 전에,<br><span class="accent">AI 하나</span>는 고르셔야 합니다.</h1>
+  <div class="ai-row">
+    <div class="ai-card">
+      <div class="ai-dot"></div>
+      <p class="ai-name">ChatGPT</p>
+      <p class="ai-desc">범용, 가장 대중적</p>
+    </div>
+    <div class="ai-card">
+      <div class="ai-dot"></div>
+      <p class="ai-name">Claude</p>
+      <p class="ai-desc">글쓰기 · 분석에 강함</p>
+    </div>
+    <div class="ai-card">
+      <div class="ai-dot"></div>
+      <p class="ai-name">Gemini</p>
+      <p class="ai-desc">구글 연동, NotebookLM</p>
+    </div>
+  </div>
+  <div class="tip">
+    <p class="tip-label">TIP</p>
+    <p class="tip-text">오늘 배울 3가지 다 "어떤 AI"에서 쓰는지 먼저 정해야 합니다</p>
+  </div>
+  <div class="footnote"><span class="rt">CHAEWON · INSIGHTLOG</span><span>07 / 43</span></div>
+</div>
+</body>
+</html>

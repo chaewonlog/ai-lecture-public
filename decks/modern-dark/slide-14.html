@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>14 · Three Types</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+  .types { display: flex; gap: 12px; margin-top: 22px; }
+  .type {
+    flex: 1;
+    padding: 18px 16px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    display: flex; flex-direction: column; gap: 8px;
+    position: relative;
+  }
+  .type-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; font-weight: 700;
+    color: var(--accent); letter-spacing: 2px;
+  }
+  .type-name {
+    font-size: 19px; font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--text);
+  }
+  .type-divider { width: 24px; height: 2px; background: var(--accent); margin: 2px 0; }
+  .type-quote {
+    font-size: 12px;
+    color: var(--muted);
+    font-style: italic;
+    line-height: 1.4;
+  }
+  .type-quote::before { content: '"'; color: var(--accent); font-weight: 700; margin-right: 2px; }
+  .type-quote::after { content: '"'; color: var(--accent); font-weight: 700; margin-left: 2px; }
+  .type-rules {
+    display: flex; flex-direction: column; gap: 5px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+    margin-top: 4px;
+  }
+  .type-rule {
+    font-size: 12px;
+    color: var(--text);
+    line-height: 1.4;
+    display: flex; gap: 6px; align-items: flex-start;
+  }
+  .type-rule::before {
+    content: '✓';
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 11px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .type-target {
+    margin-top: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 1.5px;
+    color: var(--dim); text-transform: uppercase;
+    padding-top: 8px;
+    border-top: 1px dashed var(--border);
+  }
+  .bottom-note {
+    margin-top: 14px;
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 600;
+    padding: 8px 14px;
+    background: rgba(77,127,255,0.08);
+    border-radius: 6px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <p class="eyebrow">PICK YOUR TYPE</p>
+  <h1 class="title md">타입은<br><span class="accent">3가지</span>면 충분합니다.</h1>
+
+  <div class="types">
+    <div class="type">
+      <p class="type-num">TYPE 01</p>
+      <p class="type-name">환각 차단형</p>
+      <div class="type-divider"></div>
+      <p class="type-quote">확실한 것만 답해줘</p>
+      <div class="type-rules">
+        <p class="type-rule">확실하지 않으면 명시</p>
+        <p class="type-rule">숫자엔 출처 같이</p>
+        <p class="type-rule">모호하면 먼저 되묻기</p>
+      </div>
+      <p class="type-target">연구 · 기획 · 분석</p>
+    </div>
+
+    <div class="type">
+      <p class="type-num">TYPE 02</p>
+      <p class="type-name">글쓰기 특화형</p>
+      <div class="type-divider"></div>
+      <p class="type-quote">사람이 쓴 것처럼</p>
+      <div class="type-rules">
+        <p class="type-rule">구어체로 짧게</p>
+        <p class="type-rule">첫 문장은 훅으로</p>
+        <p class="type-rule">클리셰 금지</p>
+      </div>
+      <p class="type-target">블로거 · SNS · 뉴스레터</p>
+    </div>
+
+    <div class="type">
+      <p class="type-num">TYPE 03</p>
+      <p class="type-name">업무 효율형</p>
+      <div class="type-divider"></div>
+      <p class="type-quote">결론부터, 바로 쓰게</p>
+      <div class="type-rules">
+        <p class="type-rule">결론부터, 근거는 그 다음</p>
+        <p class="type-rule">답변은 불릿으로</p>
+        <p class="type-rule">인사말 · 맺음말 생략</p>
+      </div>
+      <p class="type-target">직장인 · PM · 매니저</p>
+    </div>
+  </div>
+
+  <p class="bottom-note">→ 하나만 골라서 써보세요.</p>
+  <div class="meta"><span>CHAEWON · INSIGHTLOG</span><span>14 / 33</span></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>17 · Template Preview</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+  .tpl-grid {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+  }
+  .tpl-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .tpl-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--text);
+  }
+  .tpl-idx {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--accent);
+  }
+  .tpl-name {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.015em;
+    color: var(--text);
+  }
+  .tpl-code {
+    background: var(--surface);
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-family: 'Space Mono', monospace;
+    font-size: 10.5px;
+    line-height: 1.55;
+    color: var(--text);
+    flex: 1;
+  }
+  .tpl-code .num {
+    color: var(--accent);
+    font-weight: 700;
+    margin-right: 3px;
+  }
+  .tpl-code .line { display: block; margin-bottom: 6px; }
+  .tpl-code .line:last-child { margin-bottom: 0; }
+  .tpl-code .hl { color: var(--accent); font-weight: 700; }
+
+  .tpl-foot {
+    margin-top: 14px;
+    padding: 10px 16px;
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 12px;
+    color: var(--text);
+    font-weight: 500;
+  }
+  .tpl-foot strong { color: var(--accent); font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <p class="eyebrow">TEMPLATE PREVIEW</p>
+  <h1 class="title s">이런 식으로 <span class="accent">복붙</span>하면 됩니다.</h1>
+
+  <div class="tpl-grid">
+    <div class="tpl-col">
+      <div class="tpl-head">
+        <span class="tpl-idx">TYPE 01</span>
+        <span class="tpl-name">환각 차단형</span>
+      </div>
+      <div class="tpl-code">
+        <span class="line"><span class="num">1.</span>확실하지 않으면 <span class="hl">"확실하지 않습니다"</span> 먼저 말하세요</span>
+        <span class="line"><span class="num">2.</span>숫자·통계는 <span class="hl">출처</span>를 함께 제시하세요</span>
+        <span class="line"><span class="num">3.</span>모호한 질문은 먼저 되물어 맥락을 확인하세요</span>
+        <span class="line"><span class="num">4.</span>애매한 표현 대신 <span class="hl">"확인된 사실"</span> / <span class="hl">"추정"</span>으로 구분하세요</span>
+      </div>
+    </div>
+    <div class="tpl-col">
+      <div class="tpl-head">
+        <span class="tpl-idx">TYPE 02</span>
+        <span class="tpl-name">글쓰기 특화형</span>
+      </div>
+      <div class="tpl-code">
+        <span class="line"><span class="num">1.</span>서론 없이 <span class="hl">본문부터</span> 시작하세요</span>
+        <span class="line"><span class="num">2.</span>문어체 말고 <span class="hl">구어체로</span>, 말하듯이</span>
+        <span class="line"><span class="num">3.</span>한 문장은 짧게 — 두 줄 넘기지 마세요</span>
+        <span class="line"><span class="num">4.</span>클리셰 금지: <span class="hl">"디지털 시대에"</span>, <span class="hl">"바야흐로"</span> 쓰지 마세요</span>
+      </div>
+    </div>
+    <div class="tpl-col">
+      <div class="tpl-head">
+        <span class="tpl-idx">TYPE 03</span>
+        <span class="tpl-name">업무 효율형</span>
+      </div>
+      <div class="tpl-code">
+        <span class="line"><span class="num">1.</span><span class="hl">결론부터</span> 먼저. 이유·근거는 그 다음</span>
+        <span class="line"><span class="num">2.</span>답변은 <span class="hl">불릿으로</span> — 줄글 금지</span>
+        <span class="line"><span class="num">3.</span>인사말 · <span class="hl">"도움이 되셨기를"</span> 같은 맺음말 생략</span>
+        <span class="line"><span class="num">4.</span>선택지가 있으면 <span class="hl">표로</span> 비교하세요</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="tpl-foot">각 타입의 [B 칸] 핵심 규칙 일부 · <strong>전체 템플릿은 자료로 배포</strong></p>
+
+  <div class="footnote"><span class="rt">CHAEWON · INSIGHTLOG</span><span>18 / 43</span></div>
+</div>
+</body>
+</html>

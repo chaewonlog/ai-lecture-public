@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>21 · Prompt Sites Shortcut</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+  .site-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 22px;
+    margin-top: 22px;
+    align-items: stretch;
+  }
+  .site-info {
+    padding: 22px 20px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .site-tag {
+    align-self: flex-start;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; font-weight: 700; letter-spacing: 2px;
+    color: var(--accent);
+    background: rgba(77,127,255,0.12);
+    padding: 4px 9px; border-radius: 4px;
+  }
+  .site-name {
+    font-size: 30px; font-weight: 700;
+    letter-spacing: -0.8px;
+  }
+  .site-url {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; color: var(--accent);
+    letter-spacing: 0.3px;
+    padding: 6px 10px;
+    background: var(--surface);
+    border-radius: 5px;
+    align-self: flex-start;
+  }
+  .site-features {
+    list-style: none;
+    padding: 0;
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+  }
+  .site-features li {
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.4;
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  .site-features li::before {
+    content: '✓';
+    color: var(--accent);
+    font-weight: 700;
+    flex-shrink: 0;
+    font-size: 11px;
+    margin-top: 1px;
+  }
+
+  .site-shot {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--card);
+  }
+  .site-shot img {
+    width: 100%; height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: top center;
+  }
+  .site-shot::after {
+    content: 'promptbase.com';
+    position: absolute; bottom: 10px; right: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; font-weight: 700;
+    color: #fff;
+    padding: 4px 9px;
+    background: rgba(15,15,15,0.82);
+    border-radius: 4px;
+    letter-spacing: 1px;
+  }
+
+  .shortcut-note {
+    margin-top: 14px;
+    font-size: 13px; color: var(--dim);
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <p class="eyebrow">SHORTCUT</p>
+  <h1 class="title md">더 빠른 길도 있습니다.<br><span class="accent">프롬프트 사이트.</span></h1>
+
+  <div class="site-layout">
+    <div class="site-info">
+      <span class="site-tag">GLOBAL</span>
+      <p class="site-name">PromptBase</p>
+      <p class="site-url">promptbase.com</p>
+      <ul class="site-features">
+        <li>글로벌 최대 프롬프트 마켓</li>
+        <li>결과물 예시까지 확인 가능</li>
+        <li>역설계 스킵 — 바로 가져다 쓰기</li>
+      </ul>
+    </div>
+    <div class="site-shot">
+      <img src="./assets/promptbase.png" alt="PromptBase marketplace">
+    </div>
+  </div>
+
+  <p class="shortcut-note">* 잘 된 프롬프트 + 결과물이 이미 다 정리돼 있습니다.</p>
+
+  <div class="meta"><span>CHAEWON · INSIGHTLOG</span><span>21 / 33</span></div>
+</div>
+</body>
+</html>

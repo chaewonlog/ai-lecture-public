@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>02 · Intro</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+  .intro-list { margin-top: 28px; display: flex; flex-direction: column; gap: 10px; list-style: none; padding: 0; }
+  .intro-list li {
+    font-size: 17px;
+    color: var(--text);
+    padding-left: 22px;
+    position: relative;
+    line-height: 1.55;
+    opacity: 0.8;
+  }
+  .intro-list li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 12px;
+    width: 10px; height: 2px;
+    background: var(--accent);
+  }
+  .intro-list li.hi { opacity: 1; font-weight: 700; }
+  .intro-list li strong { color: var(--accent); font-weight: 900; }
+</style>
+</head>
+<body>
+<div class="slide top">
+  <p class="eyebrow">SPEAKER</p>
+  <h1 class="display m">안녕하세요,<br><span class="accent">채원</span>입니다.</h1>
+  <ul class="intro-list">
+    <li>스타트업에서 <strong>13년차 기획자</strong>로 일하고 있습니다</li>
+    <li>AI로 엄청난 걸 해냈다는 사람들이 온라인엔 넘쳐납니다</li>
+    <li>근데 저도 막상 써보니 처음엔 잘 안 됐습니다</li>
+    <li>그때부터 조금씩 시도하며 정리하기 시작했습니다</li>
+    <li>뉴스레터에 적었더니 도움이 된다는 분들이 많았습니다</li>
+    <li class="hi">그 방법을 오늘 나누러 왔습니다</li>
+  </ul>
+  <div class="footnote"><span class="rt">CHAEWON · INSIGHTLOG</span><span>02 / 33</span></div>
+</div>
+</body>
+</html>

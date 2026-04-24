@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>24 · Stop Copy Paste</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+  .before-after { display: flex; gap: 20px; margin-top: 36px; align-items: stretch; }
+  .ba-card { flex: 1; padding: 26px 24px; border-radius: 12px; border: 1px solid var(--border); }
+  .ba-card.before { background: var(--card); }
+  .ba-card.after { background: rgba(77,127,255,0.08); border-color: var(--accent); }
+  .ba-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 2px; margin-bottom: 14px; }
+  .ba-card.before .ba-label { color: var(--dim); }
+  .ba-card.after .ba-label { color: var(--accent); }
+  .ba-list { list-style: none; padding: 0; }
+  .ba-list li { font-size: 17px; padding: 10px 0; border-bottom: 1px solid var(--border); font-weight: 500; line-height: 1.4; }
+  .ba-list li:last-child { border-bottom: none; }
+  .ba-card.before .ba-list li { color: var(--muted); }
+  .ba-card.after .ba-list li { color: var(--text); }
+  .ba-vs { display: flex; align-items: center; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: var(--accent); font-weight: 700; letter-spacing: 2px; padding: 0 4px; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <p class="eyebrow">STOP THE LOOP</p>
+  <h1 class="title md">매번 복붙은<br><span class="accent">그만하세요.</span></h1>
+  <div class="before-after">
+    <div class="ba-card before">
+      <p class="ba-label">매번 프롬프트 입력</p>
+      <ul class="ba-list">
+        <li>복붙 · 수정 · 반복</li>
+        <li>실수 가능성</li>
+        <li>결과 일관성 떨어짐</li>
+      </ul>
+    </div>
+    <div class="ba-vs">→</div>
+    <div class="ba-card after">
+      <p class="ba-label">봇으로 박아두기</p>
+      <ul class="ba-list">
+        <li><strong>클릭 한 번</strong></li>
+        <li>실수 없음</li>
+        <li>일관된 결과</li>
+      </ul>
+    </div>
+  </div>
+  <div class="meta"><span>CHAEWON · INSIGHTLOG</span><span>24 / 33</span></div>
+</div>
+</body>
+</html>

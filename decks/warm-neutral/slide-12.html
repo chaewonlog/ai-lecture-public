@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>12 · Remember You</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+  .vs { display: flex; gap: 18px; margin-top: 24px; align-items: stretch; }
+  .vs-card {
+    flex: 1;
+    padding: 24px 22px;
+    background: var(--surface);
+    border-radius: 8px;
+  }
+  .vs-card.b { background: var(--accent); }
+  .vs-label {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--muted);
+    opacity: 0.55;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+  }
+  .vs-card.b .vs-label { color: var(--bg); opacity: 0.85; }
+  .vs-desc {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.45;
+    letter-spacing: -0.015em;
+    color: var(--text);
+  }
+  .vs-card.b .vs-desc { color: var(--bg); font-weight: 700; }
+  .vs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 0 2px;
+  }
+
+  .kicker-bottom {
+    margin-top: 22px;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .kicker-bottom strong { color: var(--accent); font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <p class="eyebrow">THE REAL DIFFERENCE</p>
+  <h1 class="title m">차이는<br><span class="accent">"나를 기억시켰냐"</span>입니다.</h1>
+  <div class="vs">
+    <div class="vs-card">
+      <p class="vs-label">A</p>
+      <p class="vs-desc">매번 처음 보는<br>사람에게 답하는 AI</p>
+    </div>
+    <div class="vs-center">VS</div>
+    <div class="vs-card b">
+      <p class="vs-label">B</p>
+      <p class="vs-desc">내가 뭘 원하는지<br>이미 아는 AI</p>
+    </div>
+  </div>
+  <p class="kicker-bottom">보통은 대화마다 처음부터 다시 시작합니다. "나는 이런 사람이야"를 매번 칩니다.<br><strong>고수는 그걸 미리 저장해둡니다.</strong></p>
+  <div class="footnote"><span class="rt">CHAEWON · INSIGHTLOG</span><span>12 / 43</span></div>
+</div>
+</body>
+</html>

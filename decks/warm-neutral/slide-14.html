@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>14 · Custom Instruction Screen</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+  .screen-frame {
+    margin-top: 20px;
+    position: relative;
+    border: 1.5px solid var(--border-strong);
+    overflow: hidden;
+    background: var(--surface);
+    border-radius: 12px;
+    aspect-ratio: 3 / 2;
+    max-height: 380px;
+  }
+  .screen-frame img {
+    width: 100%; height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+  }
+  .screen-label {
+    position: absolute;
+    top: 12px; left: 12px;
+    padding: 5px 10px;
+    background: var(--accent);
+    color: var(--bg);
+    font-family: 'Space Mono', monospace;
+    font-size: 10px; font-weight: 700;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    z-index: 2;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <p class="eyebrow">CUSTOM INSTRUCTION</p>
+  <h1 class="title s">바로 이 <span class="accent">설정 화면</span>입니다.</h1>
+
+  <div class="screen-frame">
+    <img src="./assets/gpt-settings.png" alt="ChatGPT 개인 맞춤 설정 화면">
+    <span class="screen-label">CHATGPT · 개인 맞춤 설정</span>
+  </div>
+
+  <div class="footnote"><span class="rt">CHAEWON · INSIGHTLOG</span><span>14 / 43</span></div>
+</div>
+</body>
+</html>

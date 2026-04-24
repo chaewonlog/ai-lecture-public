@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>24 · PromptBase Detail</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+  .detail-shot {
+    margin-top: 20px;
+    position: relative;
+    border: 1px solid var(--border-strong);
+    overflow: hidden;
+    background: var(--surface);
+    border-radius: 10px;
+    aspect-ratio: 16 / 9;
+  }
+  .detail-shot img {
+    width: 100%; height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+  }
+  .shot-label {
+    position: absolute;
+    top: 12px; left: 12px;
+    padding: 5px 10px;
+    background: var(--accent);
+    color: var(--bg);
+    font-family: 'Space Mono', monospace;
+    font-size: 10px; font-weight: 700;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    z-index: 2;
+  }
+  .shot-caption {
+    margin-top: 12px;
+    padding: 10px 16px;
+    background: var(--surface);
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  .shot-caption strong { color: var(--accent); font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <p class="eyebrow">PROMPTBASE · DETAIL</p>
+  <h1 class="title s">프롬프트 + <span class="accent">결과물 예시</span>까지 함께.</h1>
+
+  <div class="detail-shot">
+    <img src="./assets/promptbase-detail.png" alt="PromptBase 프롬프트 상세 페이지">
+    <span class="shot-label">DETAIL VIEW</span>
+  </div>
+
+  <p class="shot-caption">각 프롬프트마다 <strong>예시 결과물 · 평점 · 가격</strong>까지 공개 — 사기 전에 품질 확인 가능</p>
+
+  <div class="footnote"><span class="rt">CHAEWON · INSIGHTLOG</span><span>25 / 43</span></div>
+</div>
+</body>
+</html>

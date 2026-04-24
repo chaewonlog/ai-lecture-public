@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>27 · Demo Query Bot Flow</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+  .demo-flow {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .df-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 20px;
+    background: var(--surface);
+    border-radius: 8px;
+  }
+  .df-num {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--accent);
+    min-width: 32px;
+  }
+  .df-text {
+    flex: 1;
+    font-size: 16px;
+    color: var(--text);
+    font-weight: 500;
+    line-height: 1.45;
+    letter-spacing: -0.01em;
+  }
+  .df-text .hi { color: var(--accent); font-weight: 700; }
+  .df-row.highlight {
+    background: var(--accent);
+  }
+  .df-row.highlight .df-num { color: var(--bg); opacity: 0.85; }
+  .df-row.highlight .df-text { color: var(--bg); font-weight: 700; }
+  .df-row.highlight .df-text .hi { color: var(--bg); }
+
+  .closer {
+    margin-top: 14px;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.55;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <p class="eyebrow">HOW TO BUILD · 전체 순서</p>
+  <h1 class="title m">정리하면, <span class="accent">이 순서</span>입니다.</h1>
+
+  <div class="demo-flow">
+    <div class="df-row"><span class="df-num">01</span><p class="df-text">대화로 쿼리를 여러 번 뽑아봅니다</p></div>
+    <div class="df-row"><span class="df-num">02</span><p class="df-text">마음에 드는 결과가 나왔을 때 멈춥니다</p></div>
+    <div class="df-row highlight"><span class="df-num">03</span><p class="df-text"><span class="hi">"이 과정을 봇으로 만들게. 지시문 써줘"</span></p></div>
+    <div class="df-row"><span class="df-num">04</span><p class="df-text">AI가 지시문을 뽑아줍니다</p></div>
+    <div class="df-row"><span class="df-num">05</span><p class="df-text">GPTs · Projects · Gems에 붙여넣기</p></div>
+    <div class="df-row highlight"><span class="df-num">06</span><p class="df-text"><span class="hi">봇 완성</span></p></div>
+  </div>
+
+  <div class="footnote"><span class="rt">CHAEWON · INSIGHTLOG</span><span>37 / 43</span></div>
+</div>
+</body>
+</html>
