@@ -1,2 +1,17 @@
 node_modules/
 .DS_Store
+
+# 강연자 내부 작업물 (배포 안 함)
+decks/
+참고자료/
+slides.md
+slides_*.pdf
+강연기획_*.md
+강연소개.txt
+강연아웃라인_*.md
+강연이미지목록.md
+내스킬의_공통메타패턴.md
+연남서가TED_*.pdf
+package.json
+package-lock.json
+.claude/
